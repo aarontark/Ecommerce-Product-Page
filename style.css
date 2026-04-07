@@ -23,3 +23,64 @@
 button {
     font-family: inherit;
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'KumbhSans';
+    min-height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 1.5rem;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.hamburger {
+    height: .9rem;
+}
+
+.selection-container {
+    display: none;
+}
+
+.cart-section {
+    display: flex;
+    gap: 1.25rem;
+}
+
+.cart-container {
+    position: relative;
+    padding-top: .4rem;
+}
+
+.cart-num {
+    display: none;
+    background-color: var(--orange);
+    color: #fff;
+    border-radius: .5rem;
+    text-align: center;
+    padding-inline: .4rem;
+    font-size: .65rem;
+    position: absolute;
+    top: -.25rem;
+    right: -.5rem;
+}
+
+.user-profile {
+    width: 1.5rem;
+    object-fit: contain;
+}
+
+.current-img {
+    width: 100%;
+}
