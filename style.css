@@ -34,15 +34,16 @@ body {
 .navbar {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: end;
     width: 100%;
-    padding: 1rem 1.5rem;
+    padding: .75rem 1.5rem 1.5rem 1.5rem;
 }
 
 .logo-container {
     display: flex;
-    align-items: center;
+    align-items: end;
     gap: 1rem;
+    padding-bottom: .25rem;
 }
 
 .hamburger {
@@ -55,6 +56,7 @@ body {
 
 .cart-section {
     display: flex;
+    align-items: center;
     gap: 1.25rem;
 }
 
@@ -81,6 +83,52 @@ body {
     object-fit: contain;
 }
 
+.cart-dropdown {
+    display: none;
+}
+
+.product-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.current-img-container {
+    max-width: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: clamp(14rem, 80vw, 50rem);
+}
+
+.current-img-wrapper {
+    display: flex;
+    position: relative;
+    bottom: 2.5rem;
+}
+
 .current-img {
     width: 100%;
+    object-fit: contain;
+}
+
+.arrow-container {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    padding-inline: 1rem;
+}
+
+.next, .previous {
+    box-sizing: content-box;
+    background-color: var(--white);
+    padding: .8rem;
+    border-radius: 50%;
+    width: .85rem;
+    height: .85rem;
+}
+
+.thumbnails {
+    display: none;
 }
