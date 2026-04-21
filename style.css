@@ -137,7 +137,7 @@ body {
     padding: 1.5em;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 .text-container {
@@ -161,5 +161,36 @@ body {
     padding-top: .25em;
     line-height: 1.5rem;
     font-size: .95rem;
+    color: var(--dark-greyish-blue);
+}
+
+.price-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.discounts {
+    display: flex;
+    align-items: end;
+    gap: 1rem;
+}
+
+.new-price {
+    font-size: 1.85rem;
+}
+
+.discount {
+    font-size: 1rem;
+    color: var(--white);
+    background-color: var(--dark-blue);
+    font-weight: bold;
+    padding: .25em .75em;
+    border-radius: .5rem;
+}
+
+.old-price {
+    text-decoration: line-through;
+    font-weight: bold;
     color: var(--dark-greyish-blue);
 }
