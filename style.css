@@ -150,6 +150,7 @@ body {
     font-size: .75rem;
     letter-spacing: .1rem;
     color: var(--dark-greyish-blue);
+    font-weight: bold;
 }
 
 .sneaker-name {
@@ -193,4 +194,44 @@ body {
     text-decoration: line-through;
     font-weight: bold;
     color: var(--dark-greyish-blue);
+}
+
+.action-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.increment-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 1.5em;
+    padding-top: 1em;
+}
+
+.minus, .plus {
+    width: .75rem;
+}
+
+.amount {
+    font-weight: bold;
+}
+
+.cart-btn {
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: var(--orange);
+    border: none;
+    color: var(--black);
+    padding-block: 1.25em;
+    border-radius: .75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.cart-img {
+    width: 1.12rem;
 }
