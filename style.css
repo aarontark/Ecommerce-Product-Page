@@ -29,6 +29,7 @@ body {
     flex-direction: column;
     font-family: 'KumbhSans';
     min-height: 100vh;
+    position: relative;
 }
 
 .navbar {
@@ -50,8 +51,44 @@ body {
     height: .9rem;
 }
 
+.selection-background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    min-height: 100%;
+    z-index: 10000;
+    background-color: #000000bd;
+}
+
 .selection-container {
-    display: none;
+    position: absolute;
+    display: flex;
+    z-index: 1000;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    background-color: white;
+    width: 67%;
+    height: 100%;
+    padding: 1.5rem;
+    gap: 3rem;
+}
+
+.close {
+    width: 1rem;
+}
+
+.selection-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.selection {
+    list-style: none;
+    font-weight: bold;
+    font-size: 1.125rem;
 }
 
 .cart-section {
