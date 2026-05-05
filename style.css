@@ -52,31 +52,49 @@ body {
 }
 
 .selection-background {
+    display: flex;
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
     min-height: 100%;
-    z-index: 10000;
+    z-index: 10;
     background-color: #000000bd;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.selection-background-open {
+    opacity: 100%;
+    pointer-events: all;
 }
 
 .selection-container {
     position: absolute;
     display: flex;
-    z-index: 1000;
+    z-index: 100;
     flex-direction: column;
     top: 0;
     left: 0;
     background-color: white;
-    width: 67%;
+    padding-block: 1.5rem;
+    padding-inline: 0;
     height: 100%;
-    padding: 1.5rem;
     gap: 3rem;
+    width: 0;
+    transform: translateX(1);
+    overflow: hidden;
+    transition: width .4s ease, padding .4s ease;
+}
+
+.selection-container-open {
+    width: 67%;
+    padding-inline: 1.5rem;
 }
 
 .close {
     width: 1rem;
+    z-index: 1000;
 }
 
 .selection-wrapper {
