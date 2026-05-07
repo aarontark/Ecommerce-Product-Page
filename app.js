@@ -23,6 +23,30 @@ const cartMenuInit = () => {
 	})
 }
 
+const itemIncrementInit = () => {
+	const plus = document.querySelector('.plus');
+	const minus = document.querySelector('.minus');
+	const amountElem = document.querySelector('.amount');
+
+
+	plus.addEventListener('click', () => {
+		let amount = Number(amountElem.innerHTML);		
+		amount++;
+		amountElem.innerHTML = amount;
+	})
+
+	minus.addEventListener("click", () => {
+    	let amount = Number(amountElem.innerHTML);		
+		if (amount == 0) {
+			return;
+		}
+    	amount--;
+    	amountElem.innerHTML = amount;
+  	});
+}
+
+itemIncrementInit();
+
 selectionMenuInit();
 cartMenuInit();
 
